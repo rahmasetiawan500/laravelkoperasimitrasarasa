@@ -51,9 +51,10 @@ class MemberController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Member $member)
     {
         //
+        return view('pages.admin.members.show', compact('member'));
     }
 
     /**
@@ -85,8 +86,11 @@ class MemberController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Member $member)
     {
         //
+
+        $member->delete();
+        return redirect()->route('member.index');
     }
 }

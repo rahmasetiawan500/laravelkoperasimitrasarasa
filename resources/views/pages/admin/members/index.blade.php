@@ -9,7 +9,6 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Registration</h1>
     </div>
-    <a href="{{ route('member.create') }}">tambah</a>
 
     <div class="row">
         <div class="card-body">
@@ -20,6 +19,10 @@
                         <th>No</th>
                         <th scope="col">Id</th>
                         <th scope="col">Nama Lengkap</th>
+                        <th scope="col">Jenis kelamin</th>
+                        <th scope="col">Tempat,Tgl Lahir</th>
+                        <th scope="col">Pekerjaan</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
 
@@ -29,10 +32,11 @@
                             <th scope="row">{{$loop->iteration}}</th>
                             <td>{{ $member->id }}</td>
                             <td>{{ $member->nama }}</td>
-                      
+                            <td>{{ $member->jeniskelamin }}</td>
+                            <td>{{ $member->tempat }}, {{ $member->lahir }}</td>
+                            <td>{{ $member->pekerjaan }}</td>
                             <td>
-                                
-                                <a href="#" class="badge badge-primary badge-pill">Detail</a>
+                                <a href="{{ route('member.show', $member->id) }}" class="badge badge-primary badge-pill">Detail</a>
                             </td>
                         </tr>
                     @empty
