@@ -1,54 +1,50 @@
-
-  <!-- ======= Footer ======= -->
-  <footer class="section-footer mt-5 mb-4 border-top">
-    <div class="container pt-5 pb-5">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-12 col-lg-3">
-                        <h5>FEATURES</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Reviews</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Social Media Kit</a></li>
-                            <li><a href="#">Affiliate</a></li>
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <a href="#"><img src="{{ url('frontend/images/Group1.png') }}" alt="KOPERASI" /></a>
+                        </div>
+                        <ul>
+                            <li>Address: Kp. Pasir Tengah, Bandung</li>
+                            <li>Phone: +62 8953415</li>
+                            <li>Email: mitrasarasa@gmail.com</li>
                         </ul>
+                        <div class="footer-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-3">
-                        <h5>ACCOUNT</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Refund</a></li>
-                            <li><a href="#">Security</a></li>
-                            <li><a href="#">Rewards</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <h5>COMPANY</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Media</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <h5>GET CONNECTED</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Bandung, Jawa Barat</a></li>
-                            <li><a href="#">Indonesia</a></li>
-                            <li><a href="#">0821 - 2222 - 8888</a></li>
-                            <li><a href="#">koperasimitrasarasa@gmail.com</a></li>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="footer-widget">
+                        <h5>Information</h5>
+                        <ul>
+                            <li><a href="#stats">Beranda</a></li>
+                            <li><a href="#visi">Tentang</a></li>
+                            <li><a href="#networks">Visi&Misi</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row border-top justify-content-center align-items-center pt-4">
-            <div class="col-auto text-gray-500 font-weight-light">
-                2020 Copyright Koperasi Mitra Sarasa • All rights reserved • Made in Bandung
+        <div class="copyright-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text">
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | Koperasi Mitra Sarasa
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-  <!-- End Footer -->
+    </footer>
+    <!-- end Footer Section Begin -->
